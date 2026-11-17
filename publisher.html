@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish | The Teal Spotlight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">THE <span>TEAL</span> SPOTLIGHT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publisher.html" class="publish-link">Publisher</a>
+    </nav>
+</header>
+
+<section class="publisher-hero">
+    <p class="eyebrow">THE TEAL SPOTLIGHT</p>
+    <h1>Share Your Story.</h1>
+    <p>Have something interesting to share? Publish your story and put it in the spotlight.</p>
+</section>
+
+<main class="form-container">
+
+    <form id="publish-form">
+
+        <h2>Publish a New Story</h2>
+        <p class="form-description">Complete the details below to publish your article.</p>
+
+        <label for="author">Your Name</label>
+        <input type="text" id="author" placeholder="Enter your name" required>
+
+        <label for="title">Article Headline</label>
+        <input type="text" id="title" placeholder="Enter your headline" required>
+
+        <label for="image">Upload Article Image</label>
+        <input type="file" id="image" accept="image/*">
+
+        <p class="form-description">
+            Select a picture from your phone or computer.
+        </p>
+
+        <label for="content">Your Article</label>
+        <textarea id="content" rows="12" placeholder="Write your complete article here..." required></textarea>
+
+        <p class="fixed-category">
+            Category: <strong>Entertainment, Film and Popular Culture</strong>
+        </p>
+
+        <button type="submit" class="submit-button">PUBLISH ARTICLE</button>
+
+        <p id="publish-message"></p>
+
+    </form>
+
+    <section class="published-management">
+        <h2>Manage Published Articles</h2>
+        <p class="form-description">
+            View and manage your published stories.
+        </p>
+
+        <div id="published-articles"></div>
+    </section>
+
+</main>
+
+<footer>
+    <h2>THE TEAL SPOTLIGHT</h2>
+    <p>Your world. Your stories. Your spotlight.</p>
+    <p class="copyright">© 2026 The Teal Spotlight</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
